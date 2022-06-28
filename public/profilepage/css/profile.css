@@ -1,0 +1,156 @@
+/* start body */
+.body {
+    padding: 10px;
+}
+
+/* end body*/
+/* start profile */
+.profile {
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 1px 5px 12px 0px rgb(0 0 0 / 50%);
+    margin-top: 85px;
+}
+@media (max-width:991px) {
+    .profile {
+        margin-top: 125px;
+    }
+}
+@media (max-width:767px) {
+    .profile {
+        padding: 5px;
+    }
+}
+.profile .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.profile .profile-header .image {
+    position: relative;
+}
+
+.profile .profile-header .image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+@media (max-width:767px) {
+    .profile .profile-header .image img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.profile .profile-header .title {
+    width: 70%;
+}
+
+.profile .profile-header .title h2 {
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.profile .profile-header .title h2+p {
+    color: #777;
+}
+.profile .profile-header .image input[type="file"] {
+    display: none;
+}
+.profile .profile-header .image label {
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    right: 0;
+    transform: translateX(-50%);
+    font-size: 18px;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.profile .profile-header .image label:hover {
+    color: var(--main-color);
+}
+.profile .profile-body h2 {
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.profile .profile-body h2 span {
+    color: red;
+    font-size: 16px;
+}
+.profile form .profile-body div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+@media (max-width:997px) {
+    .profile form .profile-body div {
+        padding: 5px;
+    }
+}
+.profile  form .profile-body div div:first-child {
+    width: 20%;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+@media (max-width:997px) {
+    .profile  form .profile-body div div:first-child {
+        width: 26%;
+    }
+}
+.profile form .profile-body div div:last-child {
+    width: 70%;
+}
+.profile  form .profile-body div:not(:last-child) div:last-child input {
+    width: 80%;
+    padding: 15px 20px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 5px;
+}
+@media (max-width:997px) {
+    .profile form .profile-body div:not(:last-child) div:last-child input {
+        width: 100%;
+    }
+}
+.profile  form .profile-body div div:last-child input {
+    border: 3px solid #ddd;
+}
+.profile  form .profile-body div div:last-child input::placeholder {
+    text-transform: capitalize;
+}
+.profile  form .profile-body > div:last-child {
+    display: flex;
+    justify-content: right;
+}
+.profile  form .profile-body input[type="submit"] {
+    padding: 10px 50px;
+    background-color: var(--main-color);
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+/* end profile */
+
+.error {
+    color: red;
+}
+/* start animation */
+/* end animation */

@@ -1,0 +1,163 @@
+.search {
+    margin-top: 135px;
+    margin-bottom: 30px;
+}
+@media (max-width:991px) {
+    .search {
+        margin-top: 170px;
+    }
+    
+}
+.search form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:767px) {
+    .search form {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .search form div {
+        margin-bottom: 20px;
+    }
+}
+
+.search form div:not(:last-child) {
+    margin-right: 10px;
+}
+.search form div select {
+    background-color: var(--main-color2);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.search form div input {
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.search form div input:not(input[type="submit"]) {
+    border: 3px solid #ddd;
+    padding: 5px 10px;
+}
+.search form div input::placeholder:not(input[type="submit"]) {
+    text-transform: capitalize;
+}
+.search form div input:focus:not(input[type="submit"]) {
+    border-color: var(--main-color2);
+}
+.search form div input[type="submit"] {
+    background-color: var(--main-color2);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 20px;
+}
+
+/* start table*/
+.title {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+}
+.title .table-name {
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.title button {
+    padding: 5px 10px;
+    background-color: #B6202E;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.table {
+    margin-top: 40px;
+}
+.responsive-table {
+    overflow-x:auto;
+}
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+table thead {
+    border-top: 3px solid #ddd;
+    border-bottom: 3px solid #ddd;
+}
+
+table thead td {
+    font-weight: bold;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+table tbody td:nth-child(1) img {
+    width: 100px;
+    height: 100px;
+}
+table tbody tr:not(:last-child) {
+    border-bottom: 3px solid #ddd;
+}
+table tbody td {
+    text-transform: capitalize;
+    padding: 5px;
+}
+@media (max-width:767px) {
+    table thead td  {
+        font-size: 16px;
+    }
+    table tbody td {
+        font-size: 14px;
+    }
+}
+
+tbody td i {
+    color: #F7A200;
+}
+tbody tr td:last-child div{
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+tbody tr td:last-child input {
+    display: block;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+tbody tr td:last-child input:first-child {
+    background-color: var(--main-color);
+    margin-right: 10px;
+}
+tbody tr td:last-child input:last-child {
+    background-color: #B6202E;
+}
+
+.laptops tbody td:nth-child(5) ,
+.laptops tbody td:nth-child(6) ,
+.laptops tbody td:nth-child(7) {
+    text-transform: uppercase;
+}
+/* end table */
+
+
+
+/* start animation */
+/* end animation */

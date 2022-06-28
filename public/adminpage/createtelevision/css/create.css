@@ -1,0 +1,65 @@
+
+/* start form add */
+.table-add {
+    border-top: 3px solid #ddd;
+    background-color: #fff;
+    padding: 20px;  
+}
+.table-add .header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.table-add .header h4 {
+    margin-right: 20px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.table-add > form .inputs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.table-add > form .inputs div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.table-add > form .inputs div label {
+    display: block;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.table-add > form .inputs div input {
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+.table-add > form .inputs div input:not(input[type="file"]) {
+    border: 3px solid #ddd;
+}
+.table-add .product-rate label i ,
+.table-add .product-rate input {
+    color: #F7A200;
+}
+.table-add form div {
+    display: flex;
+    justify-content: center;
+}
+.table-add form  input[type="submit"] {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+/* end form add */

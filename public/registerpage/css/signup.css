@@ -1,0 +1,185 @@
+/* start variables */
+:root {
+    --main-color:#2196F3;
+    --main-transition: .3s;
+    --main-padding: 100px;
+    --section-color:#ECECEC;
+    --star-color: #F7A200;
+}
+/* end variables */
+
+/* start rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background: #ddd;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/* end rules */
+
+/* start logo */
+.logo {
+    width: 80px;
+    height: 80px;
+}
+@media (max-width:767px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+/* end logo */
+
+/* start forms */
+.forms {
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forms .container {
+    position: relative;
+    border: 3px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    padding:10px 50px;
+}
+@media (max-width:767px) {
+    .forms .container {
+        width: 300px;
+        padding: 10px;
+    }
+}
+.forms .container .image {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -73px;
+}
+@media (max-width:767px) {
+    .forms .container .image {
+        width: 50px;
+        height: 50px;
+        top: -47px;
+    }
+    
+}
+.forms .container .image img {
+    width: 100%;
+    height: 100%;
+}
+.forms .container .title  {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.forms .container .title h3 {
+    font-size: 32px;
+    text-transform: capitalize;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+@media (max-width:767px) {
+    .forms .container .title h3 {
+        font-size: 28px;
+    }
+    
+}
+.forms .container .title p {
+    color: #777;
+}
+.forms .container .title a {
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+.forms .container form {
+    width: 100%;
+}
+.forms .container form div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    position: relative;
+}
+.forms .container form .error {
+    margin-bottom: 30px;
+    text-align: left;
+    color: red;
+    margin-left: 8px;
+}
+.forms .container form .submit ,
+.forms .container form .password_confirmation{
+    margin-bottom: 30px;
+}
+.forms .container form div label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #777;
+    transition: .3s;
+}
+.forms .container form div input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 3px solid #ddd;
+    outline: none;
+    width: 100%;
+    padding: 10px 20px;
+}
+.forms .container form div input:focus {
+    border-color: var(--main-color);
+}
+.forms .container form div input[type="submit"] {
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    cursor: pointer;
+}
+.forms .container form div p {
+    color: red;
+    display: none;
+}
+.forms .container form div i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+/* end forms */

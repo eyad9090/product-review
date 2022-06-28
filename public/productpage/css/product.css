@@ -1,0 +1,240 @@
+/* start body */
+.body {
+    padding: 30px;
+}
+
+/* start product */
+.product {
+    margin-top: 120px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width:767px) {
+    .product {
+        flex-direction: column;
+    }
+}
+.product .image {
+    width: 40%;
+}
+@media (max-width:767px) {
+    .product .image {
+        width:70%;
+    }
+}
+.product .image img {
+    width: 100%;
+}
+.product .description {
+    width: 40%;
+}
+@media (max-width:767px) {
+    .product .description  {
+        width: 100%;
+    }
+}
+.product .description h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+@media (max-width:997px) {
+    .product .description h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+} 
+@media (max-width:767px) {
+    .product .description h3 {
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+.product .description .product-description {
+    line-height: 1.8;
+    font-size: 20px;    
+    margin-bottom: 10px;
+}
+.product .description .rate {
+    display: flex;
+    align-items: center;
+}
+.product .description .rate .stars {
+    margin-right: 20px;
+}
+.product .description .rate .stars i {
+    color: #F7A200;
+}
+.product .description .rate p {
+    color: #777;
+}
+/* end product */
+
+
+
+/* start feedback */
+.feedbacks  h3 {
+    font-size: 22px;
+    text-transform: capitalize;
+}
+@media (max-width:767px) {
+    .feedbacks  h3 {
+        font-size: 18px;
+    }
+}
+.feedback {
+    border: 3px solid #ddd;
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.feedback .person-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.feedback .person-header .details {
+    display: flex;
+    align-items: center;
+}
+.feedback .person-header .details div:nth-child(1) {
+    margin-right: 20px;
+}
+.feedback .person-header .details img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.feedback .person-header .details div:nth-child(2) h2 {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+@media (max-width:767px) {
+    .feedback .person-header .details div:nth-child(2) h2 {
+        font-size: 18px;
+    }
+}
+.feedback .person-header .details div:nth-child(2) p {
+    color: #777;
+    font-size: 18px;
+}
+.feedback .person-header .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feedback .person-header .options .edit {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    background-color: var(--main-color);
+    padding:10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.feedback .person-header .options .delete {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    background-color: #C82333;
+    padding:10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.feedback .person-body {
+    display: flex;
+    margin-bottom: 10px;
+}
+.feedback .person-body .stars {
+    margin-right: 15px;
+}
+.feedback .person-body .stars i{
+    color:#F7A200;
+}
+.feedback .person-body p {
+    text-transform: capitalize;
+    color: #777;
+}
+.feedback .person-footer p {
+    font-weight: 600;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* start review */
+.review {
+    margin-top: 40px;
+    /* display: flex;
+    justify-content: center; */
+}
+.review form h3 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.review form h3::first-letter {
+    text-transform: uppercase;
+}
+.review .rate {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+.review .rate > input {
+    display: none;
+}
+.review .rate:not(:checked) > label {
+    cursor:pointer;
+    font-size:18px;
+    color:#ccc;
+}
+.review .rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.review .rate:not(:checked) > label:hover,
+.review .rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.review form textarea {
+    height: 150px;
+    outline: none;
+    border: 3px solid #ddd;
+    resize: none;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.review form textarea::placeholder {
+    text-transform: capitalize;
+}
+.review form textarea:focus {
+    border-color: var(--main-color);
+}
+.review form input[type="submit"] {
+    background-color: var(--main-color);
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 50px;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+/* end review */
+/* end body */
+
+
+

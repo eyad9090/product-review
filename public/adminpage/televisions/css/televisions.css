@@ -1,0 +1,230 @@
+/* start table container */
+.table-container {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+}
+@media (max-width:767px) {
+    .table-container {
+        padding: 10px;
+    }
+}
+/* end table container */
+
+/* start table header */
+.header {
+    text-transform: capitalize;
+}
+.table-header {
+    margin-bottom: 30px;
+}
+.table-header form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    gap: 30px;
+}
+.table-header form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table-header form input {
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    border: 3px solid #ddd;
+    text-align: center;
+    width: 100%;
+}
+.table-header form .rate i { 
+    color: #F7A200;
+    font-size: 18px;
+}
+.table-header form .rate input { 
+    color: #F7A200;
+    text-align: center;
+}
+.table-header form .name input::placeholder {
+    text-transform: capitalize;
+}
+.table-header form button {
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 5px 40px;
+    border-style: none;
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* end table header */
+
+/* start table*/
+.table {
+    margin-top: 40px;
+}
+.responsive-table {
+    overflow-x:auto;
+}
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+table thead {
+    border-top: 3px solid #ddd;
+    border-bottom: 3px solid #ddd;
+}
+
+table thead td {
+    font-weight: bold;
+    padding: 10px;
+    text-transform: capitalize;
+}
+table thead td:first-child ,
+table tbody td:first-child  {
+    display: none;
+}
+table tbody td:nth-child(2) img {
+    width: 80px;
+    height: 80px;
+}
+table tbody tr:not(:last-child) {
+    border-bottom: 3px solid #ddd;
+}
+table tbody td {
+    text-transform: capitalize;
+    padding: 5px;
+}
+table tbody td:nth-child(4) {
+    text-transform: uppercase;
+}
+@media (max-width:767px) {
+    table thead td  {
+        font-size: 16px;
+    }
+    table tbody td {
+        font-size: 14px;
+    }
+}
+
+tbody td i {
+    color: #F7A200;
+}
+.products tbody tr td:nth-child(5)
+{
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: auto;
+}
+tbody tr td:last-child div{
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+tbody tr td:last-child input {
+    display: block;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+tbody tr td:last-child input:first-child {
+    background-color: var(--main-color);
+    margin-right: 10px;
+}
+tbody tr td:last-child input:last-child {
+    background-color: #B6202E;
+}
+
+.laptops tbody td:nth-child(5) ,
+.laptops tbody td:nth-child(6) ,
+.laptops tbody td:nth-child(7) {
+    text-transform: uppercase;
+}
+/* end table */
+
+
+/* start table footer */
+.table-footer {
+    
+    align-items: center;
+}
+.table-footer .header {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.table-footer .header h4 {
+    margin-right: 20px;
+    font-size: 18px;
+}
+.table-footer > form .inputs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.table-footer > form .inputs div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.table-footer > form .inputs div label {
+    display: block;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.table-footer > form .inputs div input {
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    border: 3px solid #ddd;
+    text-align: center;
+    width: 100%;
+}
+.table-footer .product-rate label i ,
+.table-footer .product-rate input {
+    color: #F7A200;
+}
+.table-footer form div {
+    display: flex;
+    justify-content: center;
+}
+.table-footer form  input[type="submit"] {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.table-footer form .product-image label {
+    transition: .3s;
+}
+.table-footer form .product-image label:hover {
+    cursor: pointer;
+}
+.table-footer form .product-image img {
+    width: 150px;
+    height: 150px;
+}
+.table-footer form .product-image input[type="file"]{
+    display: none;
+}
+.links-pagination {
+    border-top: 3px solid #ddd;
+}
+.table-footer form .error {
+    color: red;
+}
+/* end table footer */

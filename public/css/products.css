@@ -1,0 +1,294 @@
+/* start landing*/
+.landing {
+    height: calc(100vh - 80px);
+    background-color: var(--section-color);
+    margin-top: 80px;
+}
+.landing .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.landing .container .text {
+    width: 50%;  
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:991px) {
+    .landing .container .text {
+        width: 100%;
+        text-align: center;
+    }
+}
+.landing .container .text h1 {
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+@media (max-width:767px) {
+    .landing .container .text h1 {
+        font-size: 24px;
+    }
+}
+.landing .container .text p {
+    font-size: 20px;
+    margin-bottom: 35px;    
+}
+@media (max-width:767px) {
+    .landing .container .text p {
+        font-size: 18px;
+    }
+}
+.landing .container .text form {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.landing .container .text form .search_text {
+    width: 80%;
+    position: relative;
+}
+.landing .container .text form .search_text i{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+.landing .container .text form .search_text input[type="text"] {
+    width: 100%;
+    padding: 15px 40px;
+    outline: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: .3s;
+    border: 3px solid #ddd;
+    border-radius: 7px;
+}
+.landing .container .text form .search_text input[type="text"]:focus {
+    border-color: var(--main-color);
+}
+.landing .container .text form  input[type="submit"]{
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 7px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: capitalize;
+    border:none;
+    cursor: pointer;
+}
+@media (max-width:767px) {
+    .landing .container .text form input {
+        padding: 10px 30px;
+    }
+}
+.landing .container .text form input::placeholder {
+    text-transform: capitalize;
+}
+.landing .container .text a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: var(--main-transition);
+    margin-left: 5px;
+}
+@media (max-width:991px) {
+    .landing .container .text a {
+        font-size: 18px;
+    } 
+}
+@media (max-width:767px) {
+    .landing .container .text a {
+        font-size: 14px;
+    } 
+}
+.landing .container .image {
+    height:80%; 
+    width: 45%;
+}
+.landing .container .image img {
+    height: 80%;
+    width: 100%;
+}
+@media (max-width:991px) {
+    .landing .container .image {
+        display: none;
+    }
+}
+.compares {
+    display: flex;
+}
+@media (max-width:767px) {
+    .compares {
+        flex-direction: column;
+    }
+    
+}
+
+/* end landing*/
+/* start recent-reviews */
+.recent-reviews {
+    padding-top: var(--main-padding);
+    position: relative;
+}
+.container .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 40px;
+}
+.recent-reviews .card {
+    background-color: #FFF;
+    box-shadow: 0px 2px 15px 0px rgb(0 0 0/10%);
+    transition: var(--main-transition);
+    max-width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+.recent-reviews .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 2px 15px 0px rgb(0 0 0/20%);
+}
+.recent-reviews .card:hover .foot .arrow-right{
+    animation: arrow-right .5s linear infinite;
+
+}
+.recent-reviews .card .head {
+    display: flex;
+    justify-content: center;
+}
+.recent-reviews .card .head img {
+    min-width: 250px;
+    max-width: 80%;
+    height: 200px;
+}
+.recent-reviews .card .body {
+    padding: 20px;
+}
+.recent-reviews .card .body h2 {
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.recent-reviews .card .body .stars i {
+    color: var(--star-color);
+}
+.recent-reviews .card .body p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.recent-reviews .card .foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    color: var(--main-color);
+}
+.recent-reviews .card .foot a {
+    display: block;
+    color: var(--main-color);
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+}
+.recent-reviews .card .foot i {
+    font-size: 18px;
+}
+/* end recent-reviews */
+
+
+/* start top rated */
+.top-rated {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    position: relative;
+}
+.top-rated .container .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 40px;
+}
+.top-rated .card {
+    background-color: #FFF;
+    box-shadow: 0px 2px 15px 0px rgb(0 0 0/10%);
+    transition: var(--main-transition);
+    max-width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+.top-rated .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 2px 15px 0px rgb(0 0 0/20%);
+}
+.top-rated .card:hover .foot .arrow-right{
+    animation: arrow-right .5s linear infinite;
+
+}
+.top-rated .card .head {
+    display: flex;
+    justify-content: center;
+}
+.top-rated .card .head img {
+    min-width: 250px;
+    max-width: 80%;
+    height: 200px;
+}
+.top-rated .card .body {
+    padding: 20px;
+}
+.top-rated .card .body h2 {
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.top-rated .card .body .stars i {
+    color: var(--star-color);
+}
+.top-rated .card .body p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.top-rated .card .foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    color: var(--main-color);
+}
+.top-rated .card .foot a {
+    display: block;
+    color: var(--main-color);
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+}
+.top-rated .card .foot i {
+    font-size: 18px;
+}
+
+/* end top rated */

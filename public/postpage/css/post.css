@@ -1,0 +1,66 @@
+.body {
+    padding: 30px;
+}
+
+
+/* start review */
+.review {
+    margin-top: 120px;
+}
+.review form h3 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.review form h3::first-letter {
+    text-transform: uppercase;
+}
+.review .rate {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+.review .rate > input {
+    display: none;  
+}
+.review .rate:not(:checked) > label {
+    cursor:pointer;
+    font-size:18px;
+    color:#ccc;
+}
+.review .rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.review .rate:not(:checked) > label:hover,
+.review .rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.review form textarea {
+    height: 150px;
+    outline: none;
+    border: 3px solid #ddd;
+    resize: none;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.review form textarea::placeholder {
+    text-transform: capitalize;
+}
+.review form textarea:focus {
+    border-color: var(--main-color);
+}
+.review form input[type="submit"] {
+    background-color: var(--main-color);
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 50px;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+/* end review */
